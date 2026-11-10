@@ -36,6 +36,8 @@ double sum(int n) {
 //Головна функція
 int main() {
     int n;
+
+    //запит "Write 'n':"
     printf("Write 'n':\n");
     scanf("%d", &n);
 

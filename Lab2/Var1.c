@@ -9,12 +9,10 @@ double sum(int n) {
     
     //Обчислюємо суму
     for (int i = 1; i <= n; i++) {
-        total++;
         double res_und_line = 1.0;
 
         //Отримуємо значення знаменника
         for (int j = 1; j <= i; j++) {
-            total++;
             double sum_und_line = ((j+1) * sin(j));
             res_und_line *= sum_und_line;
         }
@@ -26,7 +24,6 @@ double sum(int n) {
 
 
 int main() {
-    total++;
     int n;
     printf("Write 'n':\n");
     scanf("%d", &n);

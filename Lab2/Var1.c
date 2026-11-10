@@ -6,7 +6,7 @@ long long total = 0;
 double sum(int n) {
     double res = 0.0;
     
-    //Обчислюємо суму
+    //Обчислюємо
     for (int i = 1; i <= n; i++) {
         total++;
         double res_und_line = 1.0;
@@ -19,9 +19,12 @@ double sum(int n) {
             res_und_line *= sum_und_line;
             total++;
         }
+
+        //Отримуємо значення чисельника
         double up_line = i * (i + 1);
         total += 2;
 
+        //Рахуємо та додаємо до результату
         res += up_line / res_und_line;
         total += 2;
     }

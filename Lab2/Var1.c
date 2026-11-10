@@ -15,7 +15,9 @@ double sum(int n) {
         for (int j = 1; j <= i; j++) {
             total++;
             double sum_und_line = ((j+1) * sin(j));
+            total += 2;
             res_und_line *= sum_und_line;
+            total++
         }
         double up_line = i * (i + 1);
         res += up_line / res_und_line;

@@ -2,13 +2,14 @@
 #include <math.h>
 
 
-unsigned long long total = 0;
+unsigned long total = 0;
 
 double sum(int n) {
     double res = 0.0;
     
     //Обчислюємо суму
     for (int i = 1; i <= n; i++) {
+        
         double res_und_line = 1.0;
 
         //Отримуємо значення знаменника

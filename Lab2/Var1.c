@@ -24,6 +24,7 @@ double sum(int n) {
 
 
 int main() {
+    unsigned long long total = 0;
     int n;
     printf("Write 'n':\n");
     scanf("%d", &n);

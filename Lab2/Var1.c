@@ -2,7 +2,7 @@
 #include <math.h>
 
 
-
+unsigned long long total = 0;
 
 double sum(int n) {
     double res = 0.0;
@@ -24,7 +24,6 @@ double sum(int n) {
 
 
 int main() {
-    unsigned long long total = 0;
     int n;
     printf("Write 'n':\n");
     scanf("%d", &n);
@@ -32,5 +31,6 @@ int main() {
     double res = sum(n);
 
     printf("Your result: %8f\n", res);
+    printf("Total operations: %llu\n", total);
     return 0;
 }

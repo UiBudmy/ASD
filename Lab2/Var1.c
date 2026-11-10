@@ -1,8 +1,10 @@
 #include <stdio.h>
 #include <math.h>
 
+//лічильник
 long long total = 0;
 
+//Функція для обчислення суми
 double sum(int n) {
     double res = 0.0;
     
@@ -31,7 +33,7 @@ double sum(int n) {
     return res;
 }
 
-
+//Головна функція
 int main() {
     int n;
     printf("Write 'n':\n");

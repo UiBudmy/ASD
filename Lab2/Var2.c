@@ -14,7 +14,7 @@ int main() {
         return res_und_line;
     }
     double up_line = i * (i + 1);
-        res += up_line / res_und_line;
+        res += (up_line / res_und_line);
     printf("Your result: %8f\n", res);
     return 0;
 }

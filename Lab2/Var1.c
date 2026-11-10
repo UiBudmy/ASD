@@ -2,7 +2,6 @@
 #include <math.h>
 
 
-unsigned long total = 0;
 
 double sum(int n) {
     double res = 0.0;
@@ -32,6 +31,6 @@ int main() {
     double res = sum(n);
 
     printf("Your result: %8f\n", res);
-    printf("Total operations: %llu\n", total);
+    //printf("Total operations: %llu\n", total);
     return 0;
 }

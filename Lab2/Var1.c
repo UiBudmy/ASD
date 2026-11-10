@@ -17,10 +17,13 @@ double sum(int n) {
             double sum_und_line = ((j+1) * sin(j));
             total += 2;
             res_und_line *= sum_und_line;
-            total++
+            total++;
         }
         double up_line = i * (i + 1);
+        total += 2;
+
         res += up_line / res_und_line;
+        total += 2;
     }
     return res;
 }

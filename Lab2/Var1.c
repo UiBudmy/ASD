@@ -3,8 +3,9 @@
 
 
 
-double res = 0.0;
+
 double sum(int n) {
+    double res = 0.0;
 
     //Обчислюємо суму
     for (int i = 1; i <= n; i++) {
@@ -28,6 +29,8 @@ int main() {
     int n;
     printf("Write 'n':\n");
     scanf("%d", &n);
+
+    double res = sum(n);
 
     printf("Your result: %8f\n", res);
     return 0;

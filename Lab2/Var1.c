@@ -11,7 +11,7 @@ double sum(int n) {
         double res_und_line = 1.0;
 
         //Отримуємо значення знаменника
-        for (double j = 1; j <= i; j++) {
+        for (int j = 1; j <= i; j++) {
             double sum_und_line = ((j+1) * sin(j));
             res_und_line *= sum_und_line;
             return res_und_line;

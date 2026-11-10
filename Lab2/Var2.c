@@ -3,7 +3,9 @@
 
 
 int main() {
-    double sum_und_line = ((1+1) * 1);
-    printf("sum_und_line = %f\n", sum_und_line);
+    double res_und_line = 3.0;
+    double sum_und_line = ((1+1) * 3);
+    res_und_line *= sum_und_line;
+    printf("res_und_line = %f\n", res_und_line);
     return 0;
 }

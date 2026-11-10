@@ -2,5 +2,8 @@
 #include <math.h>
 
 
-double j = 1.0;
-double sum_und_line = ((j+1) * sin(j));
+int main() {
+    double sum_und_line = ((1+1) * sin(1));
+    printf("sum_und_line = %f\n", sum_und_line);
+    return 0;
+}

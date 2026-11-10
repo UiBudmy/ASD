@@ -37,6 +37,6 @@ int main() {
     double res = sum(n);
 
     printf("Your result: %8f\n", res);
-    //printf("Total operations: %llu\n", total);
+    printf("Total operations: %lld\n", total);
     return 0;
 }

@@ -7,6 +7,7 @@ long long total = 0;
 //Функція для обчислення суми
 double sum(int n) {
     double res = 0.0;
+
     
     //Обчислюємо
     for (int i = 1; i <= n; i++) {

@@ -7,30 +7,19 @@ long long total = 0;
 //Функція для обчислення суми
 double sum(int n) {
     double res = 0.0;
-    
 
-    //Обчислюємо
+    double dp[n + 1];
+
+    dp[0] = 1.0;
+
     for (int i = 1; i <= n; i++) {
-        total++;
-        double res_und_line = 1.0;
+        dp[i] = dp[i - 1] * ((i + 1) * sin(i));
 
-        //Отримуємо значення знаменника
-        for (int j = 1; j <= i; j++) {
-            total++;
-            double sum_und_line = ((j+1) * sin(j));
-            total += 2;
-            res_und_line *= sum_und_line;
-            total++;
-        }
-
-        //Отримуємо значення чисельника
         double up_line = i * (i + 1);
-        total += 2;
 
-        //Рахуємо та додаємо до результату
-        res += up_line / res_und_line;
-        total += 2;
+        res += up_line / dp[i];
     }
+
     return res;
 }
 

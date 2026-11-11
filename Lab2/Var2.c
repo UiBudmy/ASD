@@ -13,11 +13,16 @@ double sum(int n) {
     dp[0] = 1.0;
 
     for (int i = 1; i <= n; i++) {
+        total++;
+
         dp[i] = dp[i - 1] * ((i + 1) * sin(i));
+        total += 3;
 
         double up_line = i * (i + 1);
+        total += 2;
 
         res += up_line / dp[i];
+        total += 2;
     }
 
     return res;

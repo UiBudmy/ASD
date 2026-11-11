@@ -13,7 +13,7 @@ double sum(int n) {
     dp[0] = 1.0;
 
     for (int i = 1; i <= n; i++) {
-        total++;
+        total += 2;
 
         dp[i] = dp[i - 1] * ((i + 1) * sin(i));
         total += 3;

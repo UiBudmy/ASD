@@ -10,12 +10,12 @@ double sum(int n) {
     
     //Обчислюємо
     for (int i = 1; i <= n; i++) {
-        total++;
+        total +=2;
         double res_und_line = 1.0;
 
         //Отримуємо значення знаменника
         for (int j = 1; j <= i; j++) {
-            total++;
+            total +=2;
             double sum_und_line = ((j+1) * sin(j));
             total += 2;
             res_und_line *= sum_und_line;

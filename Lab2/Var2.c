@@ -44,7 +44,7 @@ int main() {
     double res = sum(n);
 
     //Результати
-    printf("Your result: %.8f\n", res);
+    printf("Your result: %.7f\n", res);
     printf("Total operations: %lld\n", total);
     return 0;
 }

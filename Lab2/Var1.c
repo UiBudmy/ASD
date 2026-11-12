@@ -39,7 +39,10 @@ int main() {
 
     //запит "Write 'n':"
     printf("Write 'n':\n");
-    scanf("%d", &n);
+    if (scanf("%d", &n) !=1 || n <= 0) {
+        printf("INVALID");
+        return 1;
+    }
     
     double res = sum(n);
 

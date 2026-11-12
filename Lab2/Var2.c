@@ -12,6 +12,7 @@ double sum(int n) {
 
     dp[0] = 1.0;
 
+    //Розрахунки
     for (int i = 1; i <= n; i++) {
         total += 2;
 

@@ -24,13 +24,30 @@ int main() {
     AllocConsole();
     SetConsoleTitle("Console Animation");
 
-    for (int i = 80; i > 0; i--) {
-        for (int j = 0; j < HEIGHT; j++) {
-            gotoxy(i, j);
-            printf("*");
-            //fflush(stdout);
-            //Sleep(1);
-            
+    
+    for (int sum = 0; sum <= WIDTH + HEIGHT - 2; sum++) {
+        if (sum % 2 == 0) {
+            // зверху вниз
+            for (int y = 0; y < HEIGHT; y++) {
+                int x = sum - y;
+                if (x >= 0 && x < WIDTH) {
+                    gotoxy(x, y);
+                    printf("*");
+                    fflush(stdout);
+                    Sleep(15);
+                }
+            }
+        } else {
+            // знизу вверх
+            for (int y = HEIGHT - 1; y >= 0; y--) {
+                int x = sum - y;
+                if (x >= 0 && x < WIDTH) {
+                    gotoxy(x, y);
+                    printf("*");
+                    fflush(stdout);
+                    Sleep(15);
+                }
+            }
         }
     }
 

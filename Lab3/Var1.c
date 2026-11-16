@@ -28,7 +28,7 @@ int main() {
     for (int sum = 0; sum <= WIDTH + HEIGHT - 2; sum++) {
         if (sum % 2 == 0) {
             // зверху вниз
-            for (int y = 0; y < HEIGHT; y++) {
+            for (int y = 80; y > 0; y--) {
                 int x = sum - y;
                 if (x >= 0 && x < WIDTH) {
                     gotoxy(x, y);
@@ -49,6 +49,7 @@ int main() {
                 }
             }
         }
+
     }
 
     //Очікування реакції користувача

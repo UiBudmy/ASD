@@ -29,7 +29,7 @@ int main() {
             gotoxy(i, j);
             printf("*");
             fflush(stdout);
-            Sleep(25);
+            Sleep(15);
         }
     }
 

@@ -28,14 +28,14 @@ int main() {
         for (int j = 0; j < HEIGHT; j++) {
             gotoxy(i, j);
             printf("*");
-            fflush(stdout);
-            Sleep(1);
+            //fflush(stdout);
+            //Sleep(1);
             
         }
     }
 
     //Очікування реакції користувача
     printf("\n ");
-    system("pause");
+    system(" pause");
     return 0;
 }

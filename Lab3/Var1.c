@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <windows.h>
-#include <unistd.h>
+
 
 // Встановлюємо розміри консолі
-#define WIDTH 80
-#define HEIGHT 24
+#define width 80
+#define height 24
 
 // Функція для переміщення курсора в консолі
 void gotoxy(int x, int y) {
@@ -19,41 +19,55 @@ void gotoxy(int x, int y) {
 }
 
 int main() {
-    // Відкрити нову консоль
+
+    //Відкрити нову консоль
     FreeConsole();
     AllocConsole();
     SetConsoleTitle("Console Animation");
 
+    int diag = 0;
     
-    for (int sum = 0; sum <= WIDTH + HEIGHT - 2; sum++) {
-        if (sum % 2 == 0) {
-            // зверху вниз
-            for (int y = 80; y > 0; y--) {
-                int x = sum - y;
-                if (x >= 0 && x < WIDTH) {
+    for (int d = width - 1; d >= -(height - 1); d--)
+    {
+        if (diag % 2 == 0)
+        {
+            //Напис зверху вниз
+            for (int y = 0; y < height; y++)
+            {
+                int x = d + y;
+
+                if (x >= 0 && x < width)
+                {
                     gotoxy(x, y);
                     printf("*");
-                    fflush(stdout);
-                    Sleep(15);
+
+                    Sleep(20);
                 }
             }
-        } else {
-            // знизу вверх
-            for (int y = HEIGHT - 1; y >= 0; y--) {
-                int x = sum - y;
-                if (x >= 0 && x < WIDTH) {
+        }
+        else 
+        {
+            //Напис знизу вверх
+            for (int y = height - 1; y >= 0; y--)
+            {
+                int x = d + y;
+
+                if (x >= 0 && x < width)
+                {
                     gotoxy(x, y);
                     printf("*");
-                    fflush(stdout);
-                    Sleep(15);
+
+                    Sleep(20);
                 }
             }
         }
 
+        diag++;
     }
 
+
     //Очікування реакції користувача
-    printf("\n ");
+    gotoxy(0, height + 1);
     system(" pause");
     return 0;
 }

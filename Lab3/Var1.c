@@ -24,7 +24,7 @@ int main() {
     AllocConsole();
     SetConsoleTitle("Console Animation");
 
-    for (int i = 0; i < WIDTH; i++) {
+    for (int i = 80; i > 0; i--) {
         for (int j = 0; j < HEIGHT; j++) {
             gotoxy(i, j);
             printf("*");

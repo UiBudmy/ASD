@@ -35,7 +35,7 @@ int main() {
     }
 
     //Очікування реакції користувача
-    printf("\nPress any key to exit...");
+    printf("\n ");
     system("pause");
     return 0;
 }

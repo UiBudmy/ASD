@@ -25,9 +25,12 @@ int main() {
     SetConsoleTitle("Console Animation");
 
     for (int i = 0; i < WIDTH; i++) {
-        printf("*");
-        fflush(stdout);
-        Sleep(25);
+        for (int j = 0; j < HEIGHT; j++) {
+            gotoxy(i, j);
+            printf("*");
+            fflush(stdout);
+            Sleep(25);
+        }
     }
 
     //Очікування реакції користувача

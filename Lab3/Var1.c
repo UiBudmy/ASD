@@ -18,5 +18,6 @@ int main() {
     FreeConsole();
     AllocConsole();
     printf("Console opened\n");
+    system("pause");
     return 0;
 }

@@ -30,6 +30,7 @@ int main() {
             printf("*");
             fflush(stdout);
             Sleep(15);
+            
         }
     }
 

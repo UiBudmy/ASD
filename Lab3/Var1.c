@@ -24,6 +24,12 @@ int main() {
     AllocConsole();
     SetconsoleTitle("Console Animation");
 
+    for (int i = 0; i < WIDTH; i++) {
+        printf("*");
+        fflush(stdout);
+        Sleep(15);
+    }
+
     //Очікування реакції користувача
     system("pause");
     return 0;

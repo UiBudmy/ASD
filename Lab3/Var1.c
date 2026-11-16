@@ -22,8 +22,7 @@ int main() {
     // Відкрити нову консоль
     FreeConsole();
     AllocConsole();
-    
-    freopen("CONOUT$", "w", stdout);
+    SetconsoleTitle("Console Animation");
 
     //Очікування реакції користувача
     system("pause");

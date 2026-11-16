@@ -22,12 +22,12 @@ int main() {
     // Відкрити нову консоль
     FreeConsole();
     AllocConsole();
-    SetconsoleTitle("Console Animation");
+    SetConsoleTitle("Console Animation");
 
     for (int i = 0; i < WIDTH; i++) {
         printf("*");
         fflush(stdout);
-        Sleep(15);
+        Sleep(25);
     }
 
     //Очікування реакції користувача

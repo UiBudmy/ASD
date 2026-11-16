@@ -29,12 +29,13 @@ int main() {
             gotoxy(i, j);
             printf("*");
             fflush(stdout);
-            Sleep(5);
+            Sleep(1);
             
         }
     }
 
     //Очікування реакції користувача
+    printf("\nPress any key to exit...");
     system("pause");
     return 0;
 }

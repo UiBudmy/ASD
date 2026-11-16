@@ -23,6 +23,7 @@ int main() {
     FreeConsole();
     AllocConsole();
     
+    freopen("CONOUT$", "w", stdout);
 
     //Очікування реакції користувача
     system("pause");

@@ -8,9 +8,11 @@
 
 
 void gotoxy(int x, int y) {
+    // Створюємо структуру COORD для зберігання координат
     COORD pos;
     pos.X = x;
     pos.Y = y;
+    // Встановлюємо позицію курсора в консолі
     SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
 }
 

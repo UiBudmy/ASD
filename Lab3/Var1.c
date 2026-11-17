@@ -25,8 +25,8 @@ int main() {
     AllocConsole();
     SetConsoleTitle("Console Animation");
 
-    sleep(50);
-    
+    Sleep(50);
+
     int diag = 0;
     
     for (int d = width - 1; d >= -(height - 1); d--)

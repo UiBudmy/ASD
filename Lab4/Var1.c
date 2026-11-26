@@ -36,5 +36,14 @@ int main(){
         { 8, 60, 70, 80, 90,100,110,120 }
     };
 
-    
+    double x;
+
+    printf('\nWrite x:');
+    scanf("%f", &x);
+
+    int last = search(A[m-1], n, x);
+    if(last != -1) {
+        printf("\nFOUND ON LAST LINE\n");
+        printf("COODRINATES:");
+    }
 }

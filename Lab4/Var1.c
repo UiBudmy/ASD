@@ -1,22 +1,23 @@
 #include <stdio.h>
 
+#define MAX 10
 
-int search(double arr [], int size, double x){
+int search(double arr[], int size, double x){
     int leftbor = 0;
     int rightbor = size - 1;
 
     while (leftbor <= rightbor){
         int mid = (leftbor + rightbor) / 2;
 
-        if (arr[mid] == x){
+        if (arr[mid] == x)
             return mid;
-        } 
-        else if (arr[mid] > x) {
+         
+        if (arr[mid] < x) 
             leftbor = mid + 1;
-        } 
-        else {
+        
+        else 
             rightbor = mid - 1;
-        }
+        
     }
     return -1;
 }
@@ -38,10 +39,11 @@ int main(){
 
     double x;
 
-    printf('\nWrite x:');
-    scanf("%f", &x);
+    
+    printf("\nWrite x: ");
+    scanf("%lf", &x);
 
-    int last = search(A[m-1], n, x);
+    int last = search(A[m - 1], n, x);
     if(last != -1) {
         printf("\nFOUND ON LAST LINE\n");
         printf("COODRINATES: (%d,%d) \n", m-1, last);
@@ -50,7 +52,20 @@ int main(){
         printf("\nNOT FOUND ON LAST LINE\n");
     }
 
-    double first[m];
+    double first[MAX];
     
+    for (int i = 0; i < m; i++){
+        first[i] = A[i][0];
+    }
 
+    int col = search(first, m, x);
+
+    if(col != -1) {
+        printf("\nFOUND ON FIRST COLUMN\n");
+        printf("COORDINATES:(%d,%d)", col, 0);
+    }
+    else {
+        printf("\nNOT FOUND ON FIRST COLUMN\n");
+    }
+    return 0;
 }

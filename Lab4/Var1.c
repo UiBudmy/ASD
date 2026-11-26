@@ -1,7 +1,10 @@
 #include <stdio.h>
 
-int x = 10
+#
 
-int search(){
+int search(double arr [], int size, double x){
+    int leftborder = 0;
+    int rightborder = size - 1;
+    
 
 }

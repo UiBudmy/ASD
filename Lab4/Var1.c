@@ -18,5 +18,5 @@ int search(double arr [], int size, double x){
             rightbor = mid - 1;
         }
     }
-    return 0;
+    return -1;
 }

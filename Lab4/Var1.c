@@ -44,6 +44,13 @@ int main(){
     int last = search(A[m-1], n, x);
     if(last != -1) {
         printf("\nFOUND ON LAST LINE\n");
-        printf("COODRINATES:");
+        printf("COODRINATES: (%d,%d) \n", m-1, last);
     }
+    else {
+        printf("\nNOT FOUND ON LAST LINE\n");
+    }
+
+    double first[m];
+    
+
 }
